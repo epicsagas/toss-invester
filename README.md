@@ -3,11 +3,11 @@
 **[한국어](README.md)** | [English](README_EN.md)
 
 <p align="center">
-  <a href="https://github.com/epicsagas/toss-invester/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/epicsagas/toss-invester/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/epicsagas/toss-invester/issues"><img alt="Issues" src="https://img.shields.io/github/issues/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/epicsagas/toss-invester/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=58a6ff&logo=git&logoColor=white" /></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-3fb950?style=for-the-badge&labelColor=0d1117" /></a>
+ <a href="https://github.com/epicsagas/toss-invester/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
+ <a href="https://github.com/epicsagas/toss-invester/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
+ <a href="https://github.com/epicsagas/toss-invester/issues"><img alt="Issues" src="https://img.shields.io/github/issues/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
+ <a href="https://github.com/epicsagas/toss-invester/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/epicsagas/toss-invester?style=for-the-badge&labelColor=0d1117&color=58a6ff&logo=git&logoColor=white" /></a>
+ <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-3fb950?style=for-the-badge&labelColor=0d1117" /></a>
 </p>
 
 > 한국 주식(KRX 코스피·코스닥) 투자 멀티 에이전트 분석·매매 플러그인. TradingAgents 스타일 8단계 디비트 파이프라인을 AI 코딩 에이전트 플러그인 형태로 이식. 데이터·주문은 [토스증권 Open API](https://developers.tossinvest.com/docs).
@@ -80,9 +80,7 @@ cp .env.example .env   # TOSS_CLIENT_ID / TOSS_CLIENT_SECRET (+선택 TOSS_ACCOU
 
 [TradingAgents]: https://github.com/TauricResearch/TradingAgents
 
-TradingAgents는 미국 주식 연구·백테스트 생태계가 더 깊고, 실시간 체결 화면은 토스 앱이
-낫다. 이 플러그인은 "내 에이전트 안에서 한국 주식을 안전하게 분석·주문 제안까지"에
-특화되어 있다.
+TradingAgents는 미국 주식 연구·백테스트 생태계가 더 깊고, 실시간 체결 화면은 토스 앱이 낫다. 이 플러그인은 "내 에이전트 안에서 한국 주식을 안전하게 분석·주문 제안까지"에 특화되어 있다.
 
 ## 안전장치
 
@@ -103,8 +101,7 @@ python3 scripts/backtest.py sma_cross --file /tmp/a.json
 python3 scripts/test_indicators.py                  # 셀프체크
 ```
 
-전 명령 목록: `python3 scripts/toss.py --help`. 표준 라이브러리만 사용하며, pip 설치 불필요.
-성능·평가: [EVAL.md](EVAL.md) — 벤치마크 composite 1.0, 읽기 전용 엔드포인트 평균 149 ms.
+전 명령 목록: `python3 scripts/toss.py --help`. 표준 라이브러리만 사용하며, pip 설치 불필요. 성능·평가: [EVAL.md](EVAL.md) — 벤치마크 composite 1.0, 읽기 전용 엔드포인트 평균 149 ms.
 
 ## FAQ
 
@@ -115,8 +112,7 @@ python3 scripts/test_indicators.py                  # 셀프체크
 
 ## 기여
 
-이슈·PR 환영. 버그 수정은 `python3 scripts/test_indicators.py` 통과를, 문서 변경은
-한국어·영어(README_EN.md) 동시 갱신을 지켜주세요.
+이슈·PR 환영. 버그 수정은 `python3 scripts/test_indicators.py` 통과를, 문서 변경은 한국어·영어(README_EN.md) 동시 갱신을 지켜주세요.
 
 ## 감사의 글 (Acknowledgements)
 
