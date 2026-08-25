@@ -1,0 +1,19 @@
+# Hermes plugin manifest (YAML).
+# Spec: https://hermes-agent.nousresearch.com/docs/developer-guide/plugins
+# Loaded by `hermes plugins` from ~/.hermes/plugins/<name>/plugin.yaml
+name: toss-investor
+version: "0.1.0"
+description: "한국 주식(KRX) 투자 멀티 에이전트 분석·매매 플러그인 (Toss Open API)"
+author:
+  name: epicsagas
+  url: https://github.com/epicsagas
+# Hermes discovers bundled skills via ctx.register_skill() in __init__.py;
+# this list documents them so forge doctor can verify the bundle.
+provides_skills:
+  - toss-analyze
+  - toss-market-data
+  - toss-technical
+  - toss-screen
+  - toss-backtest
+  - toss-portfolio
+  - toss-trade

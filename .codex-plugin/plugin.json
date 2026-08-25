@@ -1,0 +1,23 @@
+{
+  "name": "toss-investor",
+  "version": "0.1.0",
+  "description": "한국 주식(KRX) 투자 멀티 에이전트 분석·매매 플러그인 (Toss Open API)",
+  "author": {
+    "name": "epicsagas",
+    "url": "https://github.com/epicsagas"
+  },
+  "homepage": "https://github.com/epicsagas/toss-investor",
+  "repository": "https://github.com/epicsagas/toss-investor",
+  "license": "MIT",
+  "keywords": [],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Toss Investor",
+    "shortDescription": "한국 주식(KRX) 투자 멀티 에이전트 분석·매매 플러그인 (Toss Open API)",
+    "longDescription": "한국 주식(KRX) 투자 멀티 에이전트 분석·매매 플러그인 (Toss Open API)",
+    "developerName": "epicsagas",
+    "category": "Development & Workflow",
+    "capabilities": ["Bash", "Read", "Write", "Edit"],
+    "websiteURL": "https://github.com/epicsagas/toss-investor"
+  }
+}

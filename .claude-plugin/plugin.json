@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "toss-investor",
+  "version": "0.1.0",
+  "description": "한국 주식(KRX) 투자 멀티 에이전트 분석·매매 플러그인 (Toss Open API)",
+  "author": { "name": "epicsagas", "url": "https://github.com/epicsagas" },
+  "homepage": "https://github.com/epicsagas/toss-investor",
+  "repository": "https://github.com/epicsagas/toss-investor",
+  "license": "MIT",
+  "keywords": [],
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "agents": [
+    "./agents/market-analyst.md",
+    "./agents/bull-researcher.md",
+    "./agents/bear-researcher.md",
+    "./agents/research-manager.md",
+    "./agents/risk-manager.md",
+    "./agents/portfolio-manager.md",
+    "./agents/trader.md"
+  ]
+}
