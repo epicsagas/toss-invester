@@ -40,10 +40,10 @@ The `.env` next to the plugin root is auto-loaded; existing environment variable
 
 | Host | Install |
 |------|---------|
-| Claude Code | add this directory to your plugin paths (`/plugin` → local marketplace or direct path). 7 skills + 7 agents |
-| Codex | `.codex-plugin/` manifest + `skills/` |
-| Antigravity (agy) | root `plugin.json` |
-| Hermes | `~/.hermes/plugins/toss-investor/` (`plugin.yaml` + `__init__.py`) |
+| Claude Code | `claude plugin marketplace add epicsagas/toss-invester` then `claude plugin install toss-investor@toss-investor`. 7 skills + 7 agents |
+| Codex | `codex plugin marketplace add epicsagas/toss-invester` then `codex plugin add toss-investor@toss-investor` |
+| Antigravity (agy) | `agy plugin install https://github.com/epicsagas/toss-invester` |
+| Hermes | `hermes plugins install https://github.com/epicsagas/toss-invester --enable` |
 
 Scanner false-positive note: this plugin includes order endpoints but **never calls them without the confirmation gate** — static scanners may flag it as a "trading bot".
 
