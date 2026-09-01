@@ -34,12 +34,24 @@
 cp .env.example .env   # TOSS_CLIENT_ID / TOSS_CLIENT_SECRET (+선택 TOSS_ACCOUNT_SEQ)
 ```
 
-| 호스트 | 설치 |
-|--------|------|
-| Claude Code | `claude plugin marketplace add epicsagas/toss-invester` 후 `claude plugin install toss-investor@toss-investor`. skills 7종 + agents 7종 |
-| Codex | `codex plugin marketplace add epicsagas/toss-invester` 후 `codex plugin add toss-investor@toss-investor` |
-| Antigravity (agy) | `agy plugin install https://github.com/epicsagas/toss-invester` |
-| Hermes | `hermes plugins install https://github.com/epicsagas/toss-invester --enable` |
+```bash
+# Claude Code
+claude plugin marketplace add epicsagas/toss-invester
+claude plugin install toss-investor@toss-investor
+
+# Codex
+codex plugin marketplace add epicsagas/toss-invester
+codex plugin add toss-investor@toss-investor
+
+# Antigravity (agy)
+agy plugin install https://github.com/epicsagas/toss-invester
+agy plugin enable toss-investor
+
+# Hermes Agent
+hermes plugins install https://github.com/epicsagas/toss-invester --enable
+```
+
+skills 7종 + agents 7종이 함께 설치된다.
 
 스캐너 오탐 주의: 이 플러그인은 주문 API를 포함하나 **확인 게이트 없이는 절대 호출하지 않는다** — 정적 스캔이 "trading bot"으로 오탐할 수 있다.
 

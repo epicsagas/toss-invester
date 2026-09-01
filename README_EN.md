@@ -38,12 +38,24 @@ cp .env.example .env   # TOSS_CLIENT_ID / TOSS_CLIENT_SECRET (+optional TOSS_ACC
 
 The `.env` next to the plugin root is auto-loaded; existing environment variables take precedence.
 
-| Host | Install |
-|------|---------|
-| Claude Code | `claude plugin marketplace add epicsagas/toss-invester` then `claude plugin install toss-investor@toss-investor`. 7 skills + 7 agents |
-| Codex | `codex plugin marketplace add epicsagas/toss-invester` then `codex plugin add toss-investor@toss-investor` |
-| Antigravity (agy) | `agy plugin install https://github.com/epicsagas/toss-invester` |
-| Hermes | `hermes plugins install https://github.com/epicsagas/toss-invester --enable` |
+```bash
+# Claude Code
+claude plugin marketplace add epicsagas/toss-invester
+claude plugin install toss-investor@toss-investor
+
+# Codex
+codex plugin marketplace add epicsagas/toss-invester
+codex plugin add toss-investor@toss-investor
+
+# Antigravity (agy)
+agy plugin install https://github.com/epicsagas/toss-invester
+agy plugin enable toss-investor
+
+# Hermes Agent
+hermes plugins install https://github.com/epicsagas/toss-invester --enable
+```
+
+Bundles 7 skills + 7 agents.
 
 Scanner false-positive note: this plugin includes order endpoints but **never calls them without the confirmation gate** — static scanners may flag it as a "trading bot".
 
