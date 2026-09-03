@@ -10,8 +10,9 @@
       "description": "한국 주식(KRX) 투자 멀티 에이전트 분석·매매 플러그인 (Toss Open API)",
       "category": "productivity",
       "source": {
-        "type": "local",
-        "path": "."
+        "source": "url",
+        "url": "https://github.com/epicsagas/toss-invester.git",
+        "sha": "320e44f98bd2ec02e210e63bfa1347a044ab9d6d"
       },
       "homepage": "https://github.com/epicsagas/toss-invester",
       "keywords": [
