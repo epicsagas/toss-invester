@@ -31,10 +31,11 @@
 ### Grok Build (xAI)
 
 ```bash
-grok plugin install epicsagas/toss-invester --trust
+grok plugin marketplace add epicsagas/toss-invester
+grok plugin install toss-investor@toss-investor --trust
 ```
 
-Grok reads skills from `skills/` and agents from `agents/` at the plugin root. No extra configuration needed.
+마켓플레이스 등록 없이 직접 설치할 수도 있습니다: `grok plugin install epicsagas/toss-invester --trust`. Grok은 플러그인 루트의 `skills/`와 `agents/`를 자동으로 인식합니다.
 
 **키 발급**: [토스증권 Open API](https://developers.tossinvest.com/)에서 클라이언트 자격증명(`client_id`/`client_secret`) 발급 후 `.env`에 설정. **시세 조회를 포함한 모든 API 호출에 키가 필요하다**.
 

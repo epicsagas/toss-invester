@@ -51,6 +51,10 @@ codex plugin add toss-investor@toss-investor
 agy plugin install https://github.com/epicsagas/toss-invester
 agy plugin enable toss-investor
 
+# Grok Build (xAI)
+grok plugin marketplace add epicsagas/toss-invester
+grok plugin install toss-investor@toss-investor --trust
+
 # Hermes Agent
 hermes plugins install https://github.com/epicsagas/toss-invester --enable
 ```
