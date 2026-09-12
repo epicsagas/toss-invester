@@ -12,7 +12,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/epicsagas/toss-invester.git",
-        "sha": "320e44f98bd2ec02e210e63bfa1347a044ab9d6d"
+        "sha": "717e5c54af6ba2b553ebdd1d7796c6eff8539303"
       },
       "homepage": "https://github.com/epicsagas/toss-invester",
       "keywords": [
